@@ -7,7 +7,7 @@ const handleGetHome = async (req, res) => {
 };
 
 const handleGetSong = async (req, res) => {
-  let data = await zing.get_song(req.params.id);
+  let data = await ZingMp3.getSong(req.params.id);
   return res.json(data);
 };
 
