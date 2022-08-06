@@ -8,6 +8,16 @@ dotenv.config();
 
 const port = process.env.PORT || 3000;
 
+app.use((req, res, next) => {
+  cors();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 app.use(cors());
 app.listen(port, () => {
   console.log("app listen on port " + port);
