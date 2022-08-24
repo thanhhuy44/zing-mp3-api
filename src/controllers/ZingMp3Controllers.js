@@ -100,6 +100,10 @@ const handleGetArtistSongs = async (req, res) => {
   return res.json(data);
 };
 
+const handlePageError = async (req, res) => {
+  return res.send("Sai đường dẫn!!! Vui lòng quay lại");
+};
+
 export const controllers = {
   handleGetHome,
   handleGetSong,
@@ -120,4 +124,5 @@ export const controllers = {
   handleGetDetailCategory,
   handleSearchByType,
   handleGetArtistSongs,
+  handlePageError,
 };

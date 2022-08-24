@@ -32,6 +32,8 @@ const webRoutes = (app) => {
   router.get("/mv/:id", controllers.handleGetMV);
   router.get("/mv/list", controllers.handleGetListMV);
   router.get("/mv/category", controllers.handleGetCategoryMV);
+  //
+  router.get("*", controllers.handlePageError);
 
   return app.use("/api", cors(), router);
 };

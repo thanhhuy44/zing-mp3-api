@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import webRoutes from "./src/routes/webRoutes.js";
+import ejs from "ejs";
 
 const app = new express();
 dotenv.config();
@@ -16,6 +17,10 @@ app.use((req, res, next) => {
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
+});
+
+app.get("/", (req, res) => {
+  return res.render("homepage.ejs");
 });
 
 app.use(cors());
