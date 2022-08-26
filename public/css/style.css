@@ -1,0 +1,17 @@
+.container {
+    min-height: 100vh;
+    background: rgb(153, 204, 255);
+    color: #000;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.group {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+.link{
+    text-decoration: underline;
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zing MP3 API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/base.css " type="text/css" />
+    <link rel="stylesheet" href="/public/css/style.css " type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Zing mp3 API Document</h1>
+      <div>
+        <div class="page">
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu trang chủ</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/home'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/home"
+                target="_blank"
+                >http://localhost:3000/api/home</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu zingchart</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/chart/home'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/chart/home"
+                target="_blank"
+                >http://localhost:3000/api/chart/home</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu zingchart mới phát hành</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/chart/new-release'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/chart/new-release"
+                target="_blank"
+                >http://localhost:3000/api/chart/new-release</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy Dữ liệu zingchart tuần theo khu vực</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/chart/{id khu vực}' (id Việt Nam:
+              IWZ9Z08I, id USUK: IWZ9Z0BW, id K-pop: IWZ9Z0BO)
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/chart/week/IWZ9Z08I"
+                target="_blank"
+                >http://localhost:3000/api/chart/week/IWZ9Z08I</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy Dữ liệu của 1 playlist</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/playlist/{id playlist}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/playlist/6BZZEEFE"
+                target="_blank"
+                >http://localhost:3000/api/chart/playlist/6BZZEEFE</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy Dữ liệu stream bài hát</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/song/{id bài hát}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/song/ZZFDIEB6"
+                target="_blank"
+                >http://localhost:3000/api/song/ZZFDIEB6</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy thông tin chi tiết bài hát</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/song/info/{id bài hát}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/song/info/ZZFDIEB6"
+                target="_blank"
+                >http://localhost:3000/api/song/info/ZZFDIEB6</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy lời bài hát</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/song/lyric/{id bài hát}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/song/lyric/ZZFDIEB6"
+                target="_blank"
+                >http://localhost:3000/api/song/lyric/ZZFDIEB6</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu Top 100</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/top100'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/top100"
+                target="_blank"
+                >http://localhost:3000/api/top100</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu ca sĩ</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/artist/{name}'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/artist/MIN"
+                target="_blank"
+                >http://localhost:3000/api/artist/MIN</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu bài hát của ca sĩ</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/artist/songs/{id ca sĩ}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/artist/songs/IWZA0OWC"
+                target="_blank"
+                >http://localhost:3000/api/artist/songs/IWZA0OWC</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Tìm kiếm</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/search?keyword={từ khóa tìm kiếm}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/search?keyword=min"
+                target="_blank"
+                >http://localhost:3000/api/search?keyword=min</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Radio</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/radio'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/radio"
+                target="_blank"
+                >http://localhost:3000/api/radio</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Thể loại</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/category'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/category"
+                target="_blank"
+                >http://localhost:3000/api/category</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu chi tiết 1 thể loại</h3>
+            <p class="syntax">
+              Cú pháp: Your domain + '/api/category/{id của thể loại}'
+            </p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/category/IWZ9Z09U"
+                target="_blank"
+                >http://localhost:3000/api/category/IWZ9Z09U</a
+              >
+            </p>
+          </div>
+          <div class="group">
+            <h3 class="title-page">Lấy dữ liệu MV</h3>
+            <p class="syntax">Cú pháp: Your domain + '/api/mv/{id của MV}'</p>
+            <p class="example">
+              <span class="text">Ví dụ: </span>
+              <a
+                class="link"
+                href="http://localhost:3000/api/mv/ZUZBBOFF"
+                target="_blank"
+                >http://localhost:3000/api/mv/ZUZBBOFF</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
