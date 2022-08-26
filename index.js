@@ -18,6 +18,7 @@ app.use((req, res, next) => {
   );
   next();
 });
+app.use("/public", express.static("public"));
 
 app.get("/", (req, res) => {
   return res.render("homepage.ejs");

@@ -29,7 +29,7 @@ const webRoutes = (app) => {
   router.get("/category", controllers.handleGetCategoryHome);
   router.get("/category/:id", controllers.handleGetDetailCategory);
   //
-  router.get("/mv/:id", controllers.handleGetMV);
+  router.get("/mv/detail/:id", controllers.handleGetMV);
   router.get("/mv/list", controllers.handleGetListMV);
   router.get("/mv/category", controllers.handleGetCategoryMV);
   //
