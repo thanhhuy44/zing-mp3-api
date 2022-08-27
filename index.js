@@ -20,13 +20,12 @@ app.use((req, res, next) => {
   next();
 });
 app.use("/public", express.static("public"));
+app.use(cors());
 
 app.get("/", (req, res) => {
-  return res.render("homepage.ejs");
+  return res.render("homepage");
 });
 
-app.use(cors());
-app.get("/", (req, res) => res.render("PlaylistMusic-main/index"));
 app.listen(port, () => {
   console.log("app listen on port " + port);
 });
